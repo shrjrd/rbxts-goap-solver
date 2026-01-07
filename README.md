@@ -20,7 +20,7 @@ A lightweight, pure functional GOAP solver in TypeScript for creating complex AI
 ## Installation
 
 ```zsh
-npm i goap-solver
+npm i @rbxts/goap-solver
 ```
 
 
@@ -50,13 +50,13 @@ const a: Action = {
 const b: Action = {
   name: 'GetMoney',
   preconditions: { money: 0 },
-  effects: { money: +10 },
+  effects: { money: 10 },
   priority: 2,
 }
 const c: Action = {
   name: 'BuyBeer',
   preconditions: { hasDocument: true, money: 10 },
-  effects: { beer: +1, money: -10 },
+  effects: { beer: 1, money: -10 },
 }
 
 const actions = [c, b, a]
