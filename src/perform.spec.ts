@@ -13,7 +13,7 @@ test('perform', () => {
     falsy: true,
     newBoolean: true,
     newNumber: 0,
-    value: +2,
+    value: 2,
     minus: -5,
   })
 

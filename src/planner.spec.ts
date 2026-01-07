@@ -23,13 +23,13 @@ describe('planner', () => {
     const b: Action = {
       name: 'GetMoney',
       preconditions: { money: 0 },
-      effects: { money: +10 },
+      effects: { money: 10 },
       priority: 2,
     }
     const c: Action = {
       name: 'BuyBeer',
       preconditions: { hasDocument: true, money: 10 },
-      effects: { beer: +1, money: -10 },
+      effects: { beer: 1, money: -10 },
     }
 
     const actions = [a, b, c]
@@ -87,17 +87,17 @@ describe('planner', () => {
       {
         name: 'Get 2 ore for free',
         preconditions: { playInvention: 1 },
-        effects: { ore: +2, playInvention: -1 },
+        effects: { ore: 2, playInvention: -1 },
       },
       {
         name: 'Trade wood for ore',
         preconditions: { wood: 3 },
-        effects: { wood: -3, ore: +1 },
+        effects: { wood: -3, ore: 1 },
       },
       {
         name: 'Trade stone for wheat',
         preconditions: { stone: 3 },
-        effects: { stone: -3, wheat: +1 },
+        effects: { stone: -3, wheat: 1 },
       },
       {
         name: 'Grade settlement',
@@ -130,18 +130,18 @@ describe('planner', () => {
       {
         name: 'Trade cattle for wood',
         preconditions: { cattle: 3 },
-        effects: { cattle: -3, wood: +1 },
+        effects: { cattle: -3, wood: 1 },
       },
       {
         name: 'Trade ore for wood',
         preconditions: { ore: 3 },
-        effects: { ore: -3, wood: +1 },
+        effects: { ore: -3, wood: 1 },
       },
       {
         name: 'Build settle',
         preconditions: { stone: 1, wood: 1, cattle: 1, wheat: 1 },
         effects: {
-          winScore: +1,
+          winScore: 1,
           stone: -1,
           wood: -1,
           cattle: -1,
