@@ -15,9 +15,9 @@ export type ItemQueue = {
 export const sortPlanQueue = (a: ItemQueue, b: ItemQueue) => {
   // If two plans have the same length (same number of steps),
   // then we give preference to the one with the higher total "reward"
-  if (a.plan.length === b.plan.length) return b.totalUtility - a.totalUtility
+  if (a.plan.size() === b.plan.size()) return b.totalUtility - a.totalUtility
 
   // Otherwise, the plan with fewer steps gets priority
   // we try to reach the goal in the shortest possible way
-  return a.plan.length - b.plan.length
+  return a.plan.size() - b.plan.size()
 }

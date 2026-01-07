@@ -33,7 +33,7 @@ export function planner(
 
   const visited = new Set<string>()
 
-  while (queue.length > 0) {
+  while (queue.size() > 0) {
     // Sort the plan queue before processing the next step
     // minimize steps and at the same time maximize the meaning in these steps
     queue.sort((a, b) => sortPlanQueue(a, b) < 0)

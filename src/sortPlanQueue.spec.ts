@@ -15,15 +15,15 @@ test('sorts by plan length, then by totalUtility', () => {
 
   const sorted = queue.sort((a, b) => sortPlanQueue(a, b) < 0)
 
-  expect(sorted[0].plan.length).toBe(1)
+  expect(sorted[0].plan.size()).toBe(1)
   expect(sorted[0].totalUtility).toBe(7) // max utility with shortest plan
 
-  expect(sorted[1].plan.length).toBe(1)
+  expect(sorted[1].plan.size()).toBe(1)
   expect(sorted[1].totalUtility).toBe(3)
 
-  expect(sorted[2].plan.length).toBe(2)
+  expect(sorted[2].plan.size()).toBe(2)
   expect(sorted[2].totalUtility).toBe(10)
 
-  expect(sorted[3].plan.length).toBe(2)
+  expect(sorted[3].plan.size()).toBe(2)
   expect(sorted[3].totalUtility).toBe(5)
 })
