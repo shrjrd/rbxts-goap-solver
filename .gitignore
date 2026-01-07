@@ -1,3 +1,9 @@
+out/
+include/
+sourcemap.json
+*.rbxl*
+*.rbxlx*
+
 # Logs
 logs
 *.log

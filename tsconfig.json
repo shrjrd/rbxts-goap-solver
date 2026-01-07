@@ -1,19 +1,29 @@
 {
-    "compilerOptions": {
-      "lib": ["ES2024", "DOM"],
-      "target": "ES2024",
-      "module": "NodeNext",
-      "moduleResolution": "NodeNext",
-      "outDir": "./lib/",
-      "strict": true,
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
-      "skipLibCheck": true,
-      "checkJs": true,
-      "allowJs": true,
-      "declaration": true,
-      "declarationMap": true,
-      "allowSyntheticDefaultImports": true
-    },
-    "files": ["./src/index.ts"]
-  }
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "commonjs",
+		"moduleResolution": "Node",
+		"outDir": "out",
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"allowSyntheticDefaultImports": true,
+		"downlevelIteration": true,
+		"jsx": "react",
+		"jsxFactory": "React.createElement",
+		"jsxFragmentFactory": "React.Fragment",
+		"noLib": true,
+		"resolveJsonModule": true,
+		"experimentalDecorators": true,
+		"moduleDetection": "force",
+		"typeRoots": [
+			"node_modules/@rbxts",
+		],
+		
+		"rootDir": "src",
+		"incremental": true,
+		"tsBuildInfoFile": "out/tsconfig.tsbuildinfo",
+		"baseUrl": ".",
+		"paths": {}
+	}
+}
