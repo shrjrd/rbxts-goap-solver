@@ -7,10 +7,8 @@ export const perform = (
 ): GoalFacts => {
   const result = { ...facts }
 
-  for (const key in effects) {
-    const value = effects[key]
-
-    result[key] = typeof value === 'number'
+  for (const [key, value] of pairs(effects)) {
+   result[key] = typeIs(value, 'number')
       ? value + (result[key] as number ?? 0)
       : value
   }
