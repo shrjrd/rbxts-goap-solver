@@ -2,7 +2,7 @@
   "name": "@rbxts/goap-solver",
   "version": "0.4.0",
   "description": "A lightweight, pure functional GOAP solver in TypeScript for creating complex AI agent behavior in games and simulations",
-  "homepage": "https://github.com/13luck/goap-solver#readme",
+  "homepage": "https://github.com/shrjrd/goap-solver#readme",
   "keywords": [
     "goap",
     "ai",
@@ -67,9 +67,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/13luck/goap-solver.git"
+    "url": "https://github.com/shrjrd/goap-solver.git"
   },
   "bugs": {
-    "url": "https://github.com/13luck/goap-solver/issues"
+    "url": "https://github.com/shrjrd/goap-solver/issues"
   }
 }
