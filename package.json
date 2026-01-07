@@ -16,7 +16,9 @@
   "main": "out/init.lua",
   "files": [
     "out",
-    "!**/*.tsbuildinfo"
+    "!**/*.tsbuildinfo",
+    "!out/*.spec.*",
+    "!out/jest.*"
   ],
   "scripts": {
     "clean": "del-cli ./out",
