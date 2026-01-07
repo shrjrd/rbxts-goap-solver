@@ -3,7 +3,7 @@ import { Action, GoalFacts, planner } from './planner'
 
 
 describe('planner', () => {
-  const prettyPlan = (plan: Action[] | null) => plan?.map(({ name }) => name)
+  const prettyPlan = (plan: Action[] | undefined) => plan?.map(({ name }) => name)
 
   test('going to the store for beer', () => {
     const state = {

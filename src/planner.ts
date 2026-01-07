@@ -18,7 +18,7 @@ export function planner(
   currentState: GoalFacts,
   goal: GoalFacts,
   actions: Action[],
-): Action[] | null {
+): Action[] | undefined {
   if (isGoalReached(goal, currentState)) return []
 
   const queue: {
@@ -63,5 +63,5 @@ export function planner(
     }
   }
 
-  return null // Plan not found
+  return undefined // Plan not found
 }
