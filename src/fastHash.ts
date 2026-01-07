@@ -1,7 +1,11 @@
 export function fastHash(o: Record<string, number | boolean>) {
-  let result = ''
+  const keys: string[] = []
+  for (const [k] of pairs(o)) keys.push(k)
+  keys.sort()
 
-  for (const k in o) result += `${k}${o[k]}`
+  let result = ''
+  
+  for (const k of keys) result += `${k}${o[k]}`
 
   return result
 }
