@@ -109,8 +109,8 @@ describe('planner', () => {
     const plan = planner(initialFacts, { settlementBuilt: true }, possibleActions)
 
     expect(prettyPlan(plan)).toEqual([
-      'Get 2 ore for free',
       'Trade wood for ore',
+      'Get 2 ore for free',
       'Trade stone for wheat',
       'Grade settlement',
     ])
