@@ -36,7 +36,7 @@ export function planner(
   while (queue.length > 0) {
     // Sort the plan queue before processing the next step
     // minimize steps and at the same time maximize the meaning in these steps
-    queue.sort(sortPlanQueue)
+    queue.sort((a, b) => sortPlanQueue(a, b) < 0)
 
     const { state, plan, totalUtility } = queue.shift()!
     const stateKey = fastHash(state)

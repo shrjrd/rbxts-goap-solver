@@ -13,7 +13,7 @@ test('sorts by plan length, then by totalUtility', () => {
     { state: {}, plan: [a], totalUtility: 7 },
   ]
 
-  const sorted = queue.sort(sortPlanQueue)
+  const sorted = queue.sort((a, b) => sortPlanQueue(a, b) < 0)
 
   expect(sorted[0].plan.length).toBe(1)
   expect(sorted[0].totalUtility).toBe(7) // max utility with shortest plan
